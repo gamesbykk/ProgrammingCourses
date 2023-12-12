@@ -7,7 +7,7 @@ const questions = [
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
         optionD: "x=2 y=15",
-        correctOption: "optionA"
+        correctOption: "optionD"
     },
 
     {
@@ -33,33 +33,7 @@ const questions = [
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
         optionD: "x=2 y=15",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "What is the output? x=4 print(x**2+1)",
-        optionA: "16",
-        optionB: "17",
-        optionC: "18",
-        optionD: "19",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "What is the output? x=1.5 print(x<1)",
-        optionA: "Yes",
-        optionB: "No",
-        optionC: "True",
-        optionD: "False",
         correctOption: "optionD"
-    },
-     {
-        question: 'What is x and y? x=5 y=10+x x=2',
-        optionA: "x=2 y=12",
-        optionB: "x=5 y=12",
-        optionC: "x=5 y=15",
-        optionD: "x=2 y=15",
-        correctOption: "optionA"
     },
 
     {
@@ -85,7 +59,33 @@ const questions = [
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
         optionD: "x=2 y=15",
-        correctOption: "optionA"
+        correctOption: "optionD"
+    },
+
+    {
+        question: "What is the output? x=4 print(x**2+1)",
+        optionA: "16",
+        optionB: "17",
+        optionC: "18",
+        optionD: "19",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "What is the output? x=1.5 print(x<1)",
+        optionA: "Yes",
+        optionB: "No",
+        optionC: "True",
+        optionD: "False",
+        correctOption: "optionD"
+    },
+     {
+        question: 'What is x and y? x=5 y=10+x x=2',
+        optionA: "x=2 y=12",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=15",
+        correctOption: "optionD"
     },
 
     {
