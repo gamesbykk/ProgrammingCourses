@@ -20,213 +20,93 @@ const questions = [
     },
 
     {
-        question: "Who was the first President of USA ?",
-        optionA: "Donald Trump",
-        optionB: "Barack Obama",
-        optionC: "Abraham Lincoln",
-        optionD: "George Washington",
+        question: "What is the output? x=1.5 print(x<1)",
+        optionA: "Yes",
+        optionB: "No",
+        optionC: "True",
+        optionD: "False",
+        correctOption: "optionD"
+    },
+ {
+        question: 'What is x and y? x=5 y=10+x x=2',
+        optionA: "x=2 y=15",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=12",
         correctOption: "optionD"
     },
 
     {
-        question: "30 days has ______ ?",
-        optionA: "January",
-        optionB: "December",
-        optionC: "June",
-        optionD: "August",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "How manay hours can be found in a day ?",
-        optionA: "30 hours",
-        optionB: "38 hours",
-        optionC: "48 hours",
-        optionD: "24 hours",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which is the longest river in the world ?",
-        optionA: "River Nile",
-        optionB: "Long River",
-        optionC: "River Niger",
-        optionD: "Lake Chad",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "_____ is the hottest Continent on Earth ?",
-        optionA: "Oceania",
-        optionB: "Antarctica",
-        optionC: "Africa",
-        optionD: "North America",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
-        correctOption: "optionD"
-    },
-
-    {
-        question: `"You Can't see me" is a popular saying by`,
-        optionA: "Eminem",
-        optionB: "Bill Gates",
-        optionC: "Chris Brown",
-        optionD: "John Cena",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Where is the world tallest building located ?",
-        optionA: "Africa",
-        optionB: "California",
-        optionC: "Dubai",
-        optionD: "Italy",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "The longest river in the United Kingdom is ?",
-        optionA: "River Severn",
-        optionB: "River Mersey",
-        optionC: "River Trent",
-        optionD: "River Tweed",
-        correctOption: "optionA"
-    },
-
-
-    {
-        question: "How many permanent teeth does a dog have ?",
-        optionA: "38",
-        optionB: "42",
-        optionC: "40",
-        optionD: "36",
+        question: "What is the output? x=4 print(x**2+1)",
+        optionA: "16",
+        optionB: "17",
+        optionC: "18",
+        optionD: "19",
         correctOption: "optionB"
     },
 
     {
-        question: "Which national team won the football World cup in 2018 ?",
-        optionA: "England",
-        optionB: "Brazil",
-        optionC: "Germany",
-        optionD: "France",
+        question: "What is the output? x=1.5 print(x<1)",
+        optionA: "Yes",
+        optionB: "No",
+        optionC: "True",
+        optionD: "False",
+        correctOption: "optionD"
+    },
+ {
+        question: 'What is x and y? x=5 y=10+x x=2',
+        optionA: "x=2 y=15",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=12",
         correctOption: "optionD"
     },
 
     {
-        question: "Which US state was Donald Trump Born ?",
-        optionA: "New York",
-        optionB: "California",
-        optionC: "New Jersey",
-        optionD: "Los Angeles",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "How man states does Nigeria have ?",
-        optionA: "24",
-        optionB: "30",
-        optionC: "36",
-        optionD: "37",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "____ is the capital of Nigeria ?",
-        optionA: "Abuja",
-        optionB: "Lagos",
-        optionC: "Calabar",
-        optionD: "Kano",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Los Angeles is also known as ?",
-        optionA: "Angels City",
-        optionB: "Shining city",
-        optionC: "City of Angels",
-        optionD: "Lost Angels",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "What is the capital of Germany ?",
-        optionA: "Georgia",
-        optionB: "Missouri",
-        optionC: "Oklahoma",
-        optionD: "Berlin",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "How many sides does an hexagon have ?",
-        optionA: "Six",
-        optionB: "Sevene",
-        optionC: "Four",
-        optionD: "Five",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "How many planets are currently in the solar system ?",
-        optionA: "Eleven",
-        optionB: "Seven",
-        optionC: "Nine",
-        optionD: "Eight",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which Planet is the hottest ?",
-        optionA: "Jupitar",
-        optionB: "Mercury",
-        optionC: "Earth",
-        optionD: "Venus",
+        question: "What is the output? x=4 print(x**2+1)",
+        optionA: "16",
+        optionB: "17",
+        optionC: "18",
+        optionD: "19",
         correctOption: "optionB"
     },
 
     {
-        question: "where is the smallest bone in human body located?",
-        optionA: "Toes",
-        optionB: "Ears",
-        optionC: "Fingers",
-        optionD: "Nose",
+        question: "What is the output? x=1.5 print(x<1)",
+        optionA: "Yes",
+        optionB: "No",
+        optionC: "True",
+        optionD: "False",
+        correctOption: "optionD"
+    },
+ {
+        question: 'What is x and y? x=5 y=10+x x=2',
+        optionA: "x=2 y=15",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=12",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "What is the output? x=4 print(x**2+1)",
+        optionA: "16",
+        optionB: "17",
+        optionC: "18",
+        optionD: "19",
         correctOption: "optionB"
     },
 
     {
-        question: "How many hearts does an Octopus have ?",
-        optionA: "One",
-        optionB: "Two",
-        optionC: "Three",
-        optionD: "Four",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "How many teeth does an adult human have ?",
-        optionA: "28",
-        optionB: "30",
-        optionC: "32",
-        optionD: "36",
-        correctOption: "optionC"
+        question: "What is the output? x=1.5 print(x<1)",
+        optionA: "Yes",
+        optionB: "No",
+        optionC: "True",
+        optionD: "False",
+        correctOption: "optionD"
     }
 
+    
 ]
 
 
