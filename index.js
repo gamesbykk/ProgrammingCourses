@@ -29,11 +29,11 @@ const questions = [
     },
     {
         question: 'What is x and y? x=5 y=10+x x=2',
-        optionA: "x=2 y=12",
+        optionA: "x=2 y=15",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
-        optionD: "x=2 y=15",
-        correctOption: "optionD"
+        optionD: "x=2 y=12",
+        correctOption: "optionA"
     },
 
     {
