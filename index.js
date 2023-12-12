@@ -2,20 +2,20 @@
  //you can change the questions to your own taste or even add more questions..
 const questions = [
     {
-        question: "How many days makes a week ?",
-        optionA: "10 days",
-        optionB: "14 days",
-        optionC: "5 days",
-        optionD: "7 days",
+        question: 'What is x and y? x=5 y=10+x x=2',
+        optionA: "x=2 y=15",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=12",
         correctOption: "optionD"
     },
 
     {
-        question: "How many players are allowed on a soccer pitch ?",
-        optionA: "10 players",
-        optionB: "11 players",
-        optionC: "9 players",
-        optionD: "12 players",
+        question: "What is the output? x=4 print(x**2+1)",
+        optionA: "16",
+        optionB: "17",
+        optionC: "18",
+        optionD: "19",
         correctOption: "optionB"
     },
 
