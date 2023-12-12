@@ -106,35 +106,35 @@
             <p>Choose 1 answer</p>
             <hr />
           
-            <div id='block-14' style='padding: 10px;'>
-              <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
+            <div id='block1-14' style='padding: 10px;'>
+              <label for='option1-14' style=' padding: 5px; font-size: 2.5rem;'>
                 <input type='radio' name='option' value='x=5 y=12' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                 24</label>
-              <span id='result-14'></span>
+              <span id='result1-14'></span>
             </div>
             <hr />
           
-            <div id='block-13' style='padding: 10px;'>
-              <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
+            <div id='block1-13' style='padding: 10px;'>
+              <label for='option1-13' style=' padding: 5px; font-size: 2.5rem;'>
                 <input type='radio' name='option' value='x=2 and y=15' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                 18</label>
-              <span id='result-13'></span>
+              <span id='result1-13'></span>
             </div>
             <hr />
           
-            <div id='block-12' style='padding: 10px;'>
-              <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
+            <div id='block1-12' style='padding: 10px;'>
+              <label for='option1-12' style=' padding: 5px; font-size: 2.5rem;'>
                 <input type='radio' name='option' value='x=2 y=12' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                 16</label>
-              <span id='result-12'></span>
+              <span id='result1-12'></span>
             </div>
             <hr />
           
-            <div id='block-11' style='padding: 10px;'>
-              <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
+            <div id='block1-11' style='padding: 10px;'>
+              <label for='option1-11' style=' padding: 5px; font-size: 2.5rem;'>
                 <input type='radio' name='option' value='x=5 y=15' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
                 8</label>
-              <span id='result-11'></span>
+              <span id='result1-11'></span>
             </div>
             <hr />
             <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
@@ -143,27 +143,27 @@
           <script>
             //    The function evaluates the answer and displays result
             function displayAnswer1() {
-              if (document.getElementById('option-11').checked) {
-                document.getElementById('block-11').style.border = '3px solid limegreen'
-                document.getElementById('result-11').style.color = 'limegreen'
-                document.getElementById('result-11').innerHTML = 'Correct!'
+              if (document.getElementById('option1-11').checked) {
+                document.getElementById('block1-11').style.border = '3px solid limegreen'
+                document.getElementById('result1-11').style.color = 'limegreen'
+                document.getElementById('result1-11').innerHTML = 'Correct!'
               }
-              if (document.getElementById('option-12').checked) {
-                document.getElementById('block-12').style.border = '3px solid red'
-                document.getElementById('result-12').style.color = 'red'
-                document.getElementById('result-12').innerHTML = 'Incorrect!'
+              if (document.getElementById('option1-12').checked) {
+                document.getElementById('block1-12').style.border = '3px solid red'
+                document.getElementById('result1-12').style.color = 'red'
+                document.getElementById('result1-12').innerHTML = 'Incorrect!'
                 showCorrectAnswer1()
               }
-              if (document.getElementById('option-13').checked) {
-                document.getElementById('block-13').style.border = '3px solid red'
-                document.getElementById('result-13').style.color = 'red'
+              if (document.getElementById('option1-13').checked) {
+                document.getElementById('block1-13').style.border = '3px solid red'
+                document.getElementById('result1-13').style.color = 'red'
                 document.getElementById('result-13').innerHTML = 'Incorrect!'
                 showCorrectAnswer1()
               }
-              if (document.getElementById('option-14').checked) {
-                document.getElementById('block-14').style.border = '3px solid red'
-                document.getElementById('result-14').style.color = 'red'
-                document.getElementById('result-14').innerHTML = 'Incorrect!'
+              if (document.getElementById('option1-14').checked) {
+                document.getElementById('block1-14').style.border = '3px solid red'
+                document.getElementById('result1-14').style.color = 'red'
+                document.getElementById('result1-14').innerHTML = 'Incorrect!'
                 showCorrectAnswer1()
               }
             }
@@ -176,9 +176,9 @@
               showAnswer1.style.fontSize = '1.75rem'
               document.getElementById('showanswer1').appendChild(showAnswer1)
               showAnswer1.addEventListener('click', () => {
-                document.getElementById('block-11').style.border = '3px solid limegreen'
-                document.getElementById('result-11').style.color = 'limegreen'
-                document.getElementById('result-11').innerHTML = 'Correct!'
+                document.getElementById('block1-11').style.border = '3px solid limegreen'
+                document.getElementById('result1-11').style.color = 'limegreen'
+                document.getElementById('result1-11').innerHTML = 'Correct!'
                 document.getElementById('showanswer1').removeChild(showAnswer1)
               })
             }
