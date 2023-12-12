@@ -221,7 +221,7 @@ function unCheckRadioButtons() {
     const options = document.getElementsByName("option");
     for (let i = 0; i < options.length; i++) {
         options[i].checked = false;
-    }
+    } 
 }
 
 // function for when all questions being answered
