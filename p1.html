@@ -3,185 +3,89 @@
     <head>
 
     </head>
-    <body>
-        <div style='transform: scale(0.65); position: relative; top: -100px;'>
-            <h3>What are the values of x and y?
-              <pre>
-                <code>
-                  x=5
-                  y=x+10 
-                  x=2
-                </code>
-              </pre>
-            </h3>
-            <p>Choose 1 answer</p>
-            <hr />
-          
-            <div id='block-12' style='padding: 10px;'>
-              <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=5 y=12' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                x=5 and y=12</label>
-              <span id='result-12'></span>
+    <body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
             </div>
-            <hr />
-          
-            <div id='block-11' style='padding: 10px;'>
-              <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=2 and y=15' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                x=2 and y=15</label>
-              <span id='result-11'></span>
+        </div>
+<!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
             </div>
-            <hr />
-          
-            <div id='block-13' style='padding: 10px;'>
-              <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=2 y=12' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                x=2 and y=12</label>
-              <span id='result-13'></span>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
             </div>
-            <hr />
-          
-            <div id='block-14' style='padding: 10px;'>
-              <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=5 y=15' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                x=5 and y=15</label>
-              <span id='result-14'></span>
+
+            <div class="game-options-container">
+
+               <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
             </div>
-            <hr />
-            <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
-          </div>
-          <a id='showanswer1'></a>
-          <script>
-            //    The function evaluates the answer and displays result
-            function displayAnswer1() {
-              if (document.getElementById('option-11').checked) {
-                document.getElementById('block-11').style.border = '3px solid limegreen'
-                document.getElementById('result-11').style.color = 'limegreen'
-                document.getElementById('result-11').innerHTML = 'Correct!'
-              }
-              if (document.getElementById('option-12').checked) {
-                document.getElementById('block-12').style.border = '3px solid red'
-                document.getElementById('result-12').style.color = 'red'
-                document.getElementById('result-12').innerHTML = 'Incorrect!'
-                showCorrectAnswer1()
-              }
-              if (document.getElementById('option-13').checked) {
-                document.getElementById('block-13').style.border = '3px solid red'
-                document.getElementById('result-13').style.color = 'red'
-                document.getElementById('result-13').innerHTML = 'Incorrect!'
-                showCorrectAnswer1()
-              }
-              if (document.getElementById('option-14').checked) {
-                document.getElementById('block-14').style.border = '3px solid red'
-                document.getElementById('result-14').style.color = 'red'
-                document.getElementById('result-14').innerHTML = 'Incorrect!'
-                showCorrectAnswer1()
-              }
-            }
-            // the functon displays the link to the correct answer
-            function showCorrectAnswer1() {
-              let showAnswer1 = document.createElement('p')
-              showAnswer1.innerHTML = 'Show Correct Answer'
-              showAnswer1.style.position = 'relative'
-              showAnswer1.style.top = '-180px'
-              showAnswer1.style.fontSize = '1.75rem'
-              document.getElementById('showanswer1').appendChild(showAnswer1)
-              showAnswer1.addEventListener('click', () => {
-                document.getElementById('block-11').style.border = '3px solid limegreen'
-                document.getElementById('result-11').style.color = 'limegreen'
-                document.getElementById('result-11').innerHTML = 'Correct!'
-                document.getElementById('showanswer1').removeChild(showAnswer1)
-              })
-            }
-          </script>
-                <div style='transform: scale(0.65); position: relative; top: -100px;'>
-            <h3>What does this output?
-              <pre>
-                <code>
-                    x=4
-                    print(x**2)
-                </code>
-              </pre>
-            </h3>
-            <p>Choose 1 answer</p>
-            <hr />
-          
-            <div id='block1-14' style='padding: 10px;'>
-              <label for='option1-14' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=5 y=12' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                24</label>
-              <span id='result1-14'></span>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
             </div>
-            <hr />
-          
-            <div id='block1-13' style='padding: 10px;'>
-              <label for='option1-13' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=2 and y=15' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                18</label>
-              <span id='result1-13'></span>
-            </div>
-            <hr />
-          
-            <div id='block1-12' style='padding: 10px;'>
-              <label for='option1-12' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=2 y=12' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                16</label>
-              <span id='result1-12'></span>
-            </div>
-            <hr />
-          
-            <div id='block1-11' style='padding: 10px;'>
-              <label for='option1-11' style=' padding: 5px; font-size: 2.5rem;'>
-                <input type='radio' name='option' value='x=5 y=15' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                8</label>
-              <span id='result1-11'></span>
-            </div>
-            <hr />
-            <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
-          </div>
-          <a id='showanswer1'></a>
-          <script>
-            //    The function evaluates the answer and displays result
-            function displayAnswer1() {
-              if (document.getElementById('option1-11').checked) {
-                document.getElementById('block1-11').style.border = '3px solid limegreen'
-                document.getElementById('result1-11').style.color = 'limegreen'
-                document.getElementById('result1-11').innerHTML = 'Correct!'
-              }
-              if (document.getElementById('option1-12').checked) {
-                document.getElementById('block1-12').style.border = '3px solid red'
-                document.getElementById('result1-12').style.color = 'red'
-                document.getElementById('result1-12').innerHTML = 'Incorrect!'
-                showCorrectAnswer1()
-              }
-              if (document.getElementById('option1-13').checked) {
-                document.getElementById('block1-13').style.border = '3px solid red'
-                document.getElementById('result1-13').style.color = 'red'
-                document.getElementById('result-13').innerHTML = 'Incorrect!'
-                showCorrectAnswer1()
-              }
-              if (document.getElementById('option1-14').checked) {
-                document.getElementById('block1-14').style.border = '3px solid red'
-                document.getElementById('result1-14').style.color = 'red'
-                document.getElementById('result1-14').innerHTML = 'Incorrect!'
-                showCorrectAnswer1()
-              }
-            }
-            // the functon displays the link to the correct answer
-            function showCorrectAnswer1() {
-              let showAnswer1 = document.createElement('p')
-              showAnswer1.innerHTML = 'Show Correct Answer'
-              showAnswer1.style.position = 'relative'
-              showAnswer1.style.top = '-180px'
-              showAnswer1.style.fontSize = '1.75rem'
-              document.getElementById('showanswer1').appendChild(showAnswer1)
-              showAnswer1.addEventListener('click', () => {
-                document.getElementById('block1-11').style.border = '3px solid limegreen'
-                document.getElementById('result1-11').style.color = 'limegreen'
-                document.getElementById('result1-11').innerHTML = 'Correct!'
-                document.getElementById('showanswer1').removeChild(showAnswer1)
-              })
-            }
-          </script>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
     </body>
 </html>
