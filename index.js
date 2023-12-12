@@ -27,12 +27,12 @@ const questions = [
         optionD: "False",
         correctOption: "optionD"
     },
- {
+    {
         question: 'What is x and y? x=5 y=10+x x=2',
-        optionA: "x=2 y=15",
+        optionA: "x=2 y=12",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
-        optionD: "x=2 y=12",
+        optionD: "x=2 y=15",
         correctOption: "optionD"
     },
 
@@ -53,12 +53,12 @@ const questions = [
         optionD: "False",
         correctOption: "optionD"
     },
- {
+     {
         question: 'What is x and y? x=5 y=10+x x=2',
-        optionA: "x=2 y=15",
+        optionA: "x=2 y=12",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
-        optionD: "x=2 y=12",
+        optionD: "x=2 y=15",
         correctOption: "optionD"
     },
 
@@ -79,12 +79,12 @@ const questions = [
         optionD: "False",
         correctOption: "optionD"
     },
- {
+     {
         question: 'What is x and y? x=5 y=10+x x=2',
-        optionA: "x=2 y=15",
+        optionA: "x=2 y=12",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
-        optionD: "x=2 y=12",
+        optionD: "x=2 y=15",
         correctOption: "optionD"
     },
 
