@@ -28,7 +28,7 @@ const questions = [
         correctOption: "optionD"
     },
     {
-        question: 'What is x and y? x=10 if x==12: y=3 else: y=5',
+        question: 'What is x and y? x=10 if x==12: y=5 x=12 else: x=2 y=15',
         optionA: "x=2 y=15",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
@@ -63,7 +63,7 @@ const questions = [
     },
 
     {
-        question: 'What is x and y? x=10 if x==12: y=3 else: y=5',
+        question: 'What is x and y? x=10 if x==12: y=5 x=12 else: x=2 y=15',
         optionA: "x=2 y=15",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
@@ -98,7 +98,7 @@ const questions = [
     },
 
     {
-        question: 'What is x and y? x=10 if x==12: y=5 x=12 else: y=2 x=15',
+        question: 'What is x and y? x=10 if x==12: y=5 x=12 else: x=2 y=15',
         optionA: "x=2 y=15",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
