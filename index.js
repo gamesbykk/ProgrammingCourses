@@ -63,12 +63,12 @@ const questions = [
     },
 
     {
-        question: "What is the output? x=4 print(x**2+1)",
-        optionA: "16",
-        optionB: "17",
-        optionC: "18",
-        optionD: "19",
-        correctOption: "optionB"
+        question: 'What is x and y? x=10 if x==12: y=3 else: y=5',
+        optionA: "x=2 y=15",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=12",
+        correctOption: "optionA"
     },
 
     {
@@ -98,12 +98,12 @@ const questions = [
     },
 
     {
-        question: "What is the output? x=1.5 print(x<1)",
-        optionA: "Yes",
-        optionB: "No",
-        optionC: "True",
-        optionD: "False",
-        correctOption: "optionD"
+        question: 'What is x and y? x=10 if x==12: y=5 x=12 else: y=2 x=15',
+        optionA: "x=2 y=15",
+        optionB: "x=5 y=12",
+        optionC: "x=5 y=15",
+        optionD: "x=2 y=12",
+        correctOption: "optionA"
     }
 
     
