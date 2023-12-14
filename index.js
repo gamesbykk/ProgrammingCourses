@@ -28,7 +28,7 @@ const questions = [
         correctOption: "optionD"
     },
     {
-        question: 'What is x and y? x=5 y=10+x x=2',
+        question: 'What is x and y? x=10 if x==12: y=3 else: y=5',
         optionA: "x=2 y=15",
         optionB: "x=5 y=12",
         optionC: "x=5 y=15",
