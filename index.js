@@ -35,7 +35,30 @@ const questions = [
         optionD: "x=2 y=12",
         correctOption: "optionA"
     },
-
+    {
+        question: 'What is the value of z? x=2 y=x+3 z=x+y',
+        optionA: "z=5",
+        optionB: "z=7",
+        optionC: "z=8",
+        optionD: "z=10",
+        correctOption: "optionB"
+    },
+    {
+        question: 'What is the value of c? a=10 b=a-3 c=a+b',
+        optionA: "c=13",
+        optionB: "c=17",
+        optionC: "c=20",
+        optionD: "c=7",
+        correctOption: "optionB"
+    },
+    {
+        question: 'If x=8 and y=x/2, what is y?',
+        optionA: "y=2",
+        optionB: "y=4",
+        optionC: "y=6",
+        optionD: "y=8",
+        correctOption: "optionB"
+    },
     {
         question: "What is the output? x=4 print(x**2+1)",
         optionA: "16",
@@ -104,8 +127,55 @@ const questions = [
         optionC: "x=5 y=15",
         optionD: "x=2 y=12",
         correctOption: "optionA"
+    },
+     {
+        question: 'What is the value of z? x=2 y=x+3 z=x+y',
+        optionA: "z=5",
+        optionB: "z=7",
+        optionC: "z=8",
+        optionD: "z=10",
+        correctOption: "optionB"
+    },
+    {
+        question: 'What is the value of c? a=10 b=a-3 c=a+b',
+        optionA: "c=13",
+        optionB: "c=17",
+        optionC: "c=20",
+        optionD: "c=7",
+        correctOption: "optionB"
+    },
+    {
+        question: 'If x=8 and y=x/2, what is y?',
+        optionA: "y=2",
+        optionB: "y=4",
+        optionC: "y=6",
+        optionD: "y=8",
+        correctOption: "optionB"
+    },
+     {
+        question: 'What is the value of z? x=2 y=x+3 z=x+y',
+        optionA: "z=5",
+        optionB: "z=7",
+        optionC: "z=8",
+        optionD: "z=10",
+        correctOption: "optionB"
+    },
+    {
+        question: 'What is the value of c? a=10 b=a-3 c=a+b',
+        optionA: "c=13",
+        optionB: "c=17",
+        optionC: "c=20",
+        optionD: "c=7",
+        correctOption: "optionB"
+    },
+    {
+        question: 'If x=8 and y=x/2, what is y?',
+        optionA: "y=2",
+        optionB: "y=4",
+        optionC: "y=6",
+        optionD: "y=8",
+        correctOption: "optionB"
     }
-
     
 ]
 
