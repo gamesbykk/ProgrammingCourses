@@ -34,6 +34,7 @@ body {
 
 /* Individual course card */
 /* Updated Course Card with Moving Gradient */
+/* Updated Course Card with Animated Gradient */
 .course-card {
     text-decoration: none;
     display: flex;
@@ -43,8 +44,8 @@ body {
     width: 280px;
     height: 180px;
     background: linear-gradient(135deg, #ff4e50, #f9d423);
-    background-size: 300% 300%;
-    animation: gradientMove 6s ease infinite;
+    background-size: 200% 200%;
+    animation: gradientShift 5s linear infinite;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -56,18 +57,25 @@ body {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* Keyframes for Gradient Movement */
-@keyframes gradientMove {
+/* Keyframes to Shift the Gradient */
+@keyframes gradientShift {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
 }
+
 
 .course-content {
     background: rgba(0, 0, 0, 0.6);
