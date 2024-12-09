@@ -8,8 +8,10 @@
 html, body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, #f0f0f0, #e2e2e2);
-    color: #333;
+    background-image: url('hi.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; 
 }
 
 /* Page layout */
